@@ -26,7 +26,7 @@
       <button onfocus="calculateTip(.15)" class= "15 tip-buttons">15%</button>
       <button onfocus="calculateTip(.25)" class= "25 tip-buttons">25%</button>
       <button onfocus="calculateTip(.50)" class= "50 tip-buttons">50%</button>
-      <input onfocus="calculateTip(document.getElementById('custom').value)" class="custom" id="custom" placeholder="Custom">
+      <input onkeyup="calculateTip((document.getElementById('custom').value) / 100)" class="custom" id="custom" placeholder="Custom">
     </div>
 
     <div class="number-of-ppl-container">
