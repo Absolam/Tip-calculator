@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <section class="container">
+    <div class="bill-container">
+      <h3>Bill</h3>
+      <input type="text" placeholder="0" class="bill-input" id="bill-input">
+    </div>
+
+    <div class="select-tip-container">
+      <h3>Select Tip %<h3></h3>
+      <button onfocus="calculateTip(.05)" class= "tip-buttons" id="5">5%</button>
+      <button onfocus="calculateTip(.10)" class= "10 tip-buttons">10%</button>
+      <button onfocus="calculateTip(.15)" class= "15 tip-buttons">15%</button>
+      <button onfocus="calculateTip(.25)" class= "25 tip-buttons">25%</button>
+      <button onfocus="calculateTip(.50)" class= "50 tip-buttons">50%</button>
+      <input onfocus="calculateTip(document.getElementById('custom').value)" class="custom" id="custom" placeholder="Custom">
+    </div>
+
+    <div class="number-of-ppl-container">
+      <h3>Number of People</h3>
+      <input type="text" placeholder="0" class="people-input" id="people-input">
+    </div>
+
+    <div class="calculate-container">
+      <div class="tip-amount-text">
+        <h3>Tip Amount</h3>
+        <p class="person">/ person</p>
+      </div>
+
+      <div class="tip-amount-num">
+        <p class="tip-amount">$0.00</p>
+      </div>
+      
+      <div class="total">
+        <h3>Total</h3>
+        <p class="person">/ person</p>
+      </div>
+      
+      <div class="total-num">
+        <p class="total-amount" id="total-amount">$0.00</p>
+      </div>
+      
+      <div class="reset">
+        <button onclick="reset()" class="reset">Reset</button>
+      </div> 
+    </div>
+  </section>
+<script src="script.js"></script>
+</body>
+</html>

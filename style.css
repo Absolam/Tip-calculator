@@ -1,0 +1,159 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: hsl(185, 41%, 84%);
+}
+
+body {
+  background-color: white;
+  font-family: "space mono", sans-serif;
+
+  width: 325px;
+
+  margin: 120px auto 0 auto;
+  padding: 30px;
+  border-radius: 20px 20px 0 0;
+}
+
+input {
+  height: 40px;
+  border: none;
+  font-size: 24px;
+
+  text-align: right;
+  font-weight: 700;
+  padding-right: 10px;
+
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+}
+
+input::placeholder {
+  font-weight: 700;
+  font-family: "space mono", sans-serif;
+  color: hsl(184, 14%, 56%);
+}
+
+h3 {
+  font-size: 16px;
+  color: hsl(184, 14%, 56%);
+}
+
+.bill-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  margin-bottom: 30px;
+}
+
+.select-tip-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.tip-buttons {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 24px;
+  height: 40px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tip-buttons:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.tip-buttons:focus {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.custom {
+  background-color: hsl(189, 41%, 97%);
+  width: 145px;
+}
+
+.number-of-ppl-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  margin-top: 20px;
+}
+
+.calculate-container {
+  background-color: hsl(183, 100%, 15%);
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 20px;
+  align-items: center;
+  gap: 10px;
+
+  color: white;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.tip-amount-num,
+.total-num {
+  justify-self: end;
+  font-size: 24px;
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+}
+
+.tip-amount-text > h3 {
+  font-size: 14px;
+  color: white;
+}
+
+.total > h3 {
+  font-size: 14px;
+  color: white;
+}
+
+.reset {
+  grid-column: 1 / 3;
+  justify-self: center;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  width: 280px;
+  height: 40px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.person {
+  font-size: 12px;
+  color: hsl(184, 14%, 56%);
+}
+
+.highlight {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
