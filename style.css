@@ -9,14 +9,23 @@ html {
 }
 
 body {
-  background-color: white;
+  /* background-color: white; */
   font-family: "space mono", sans-serif;
 
-  width: 325px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  margin: 120px auto 0 auto;
-  padding: 24px;
+  padding: 0px;
   border-radius: 20px 20px 0 0;
+}
+
+.container {
+  background-color: white;
+  padding: 30px 30px;
+  border-radius: 20px;
 }
 
 input {
@@ -156,4 +165,16 @@ h3 {
 .highlight {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .calculate-container {
+    height: 300px;
+  }
 }
